@@ -1,0 +1,4 @@
+PyTorch
+HuggingFace Transformers
+Pillow
+Numpy
