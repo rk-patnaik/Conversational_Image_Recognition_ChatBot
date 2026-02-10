@@ -10,7 +10,6 @@ A production-ready multimodal AI system that understands images and answers natu
 - Conversational interaction with images
 - CPU-optimized inference (no GPU required)
 - Clean, modular, and scalable architecture
-- User-friendly interface using Gradio
 
 
 # Project Overview
@@ -41,7 +40,7 @@ The system follows a four-layer architecture:
 
 # Dataset & Evaluation
 
-- Datasets used: COCO, Visual Genome (pre-trained model)
+- Datasets used: COCO
 - Evaluation metrics:
   - BLEU, METEOR, CIDEr for image captioning
   - VQA Accuracy for question answering
