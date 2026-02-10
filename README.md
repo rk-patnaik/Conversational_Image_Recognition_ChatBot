@@ -1,4 +1,4 @@
-# Image-Based Conversational AI using BLIP
+# Conversational Image Recognition Chat Bot 
 
 A CPU-based conversational AI system that understands images and answers user questions using a vision–language transformer model (BLIP).
 
