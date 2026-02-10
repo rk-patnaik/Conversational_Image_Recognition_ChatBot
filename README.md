@@ -1,48 +1,32 @@
-# Conversational Image Recognition Chat Bot
+# Image-Based Conversational AI using BLIP
 
-A production-ready multimodal AI system that understands images and answers natural language questions using a vision–language transformer model. The system performs image captioning and visual question answering (VQA) and is optimized to run on CPU-only environments.
+A CPU-based conversational AI system that understands images and answers user questions using a vision–language transformer model (BLIP).
 
 
 # Features
-
 - Image caption generation
 - Visual Question Answering (VQA)
-- Conversational interaction with images
-- CPU-optimized inference (no GPU required)
-- Clean, modular, and scalable architecture
+- Conversational interaction
+- CPU-only execution
+- Runs in Google Colab or local Python environment
 
 
-# Project Overview
-
-Traditional image processing systems are limited to classification or object detection and do not support natural interaction. This project bridges that gap by enabling users to upload an image, receive an automatic description, and ask follow-up questions about the image in natural language.
-
-The system is built using the BLIP (Bootstrapped Language–Image Pretraining) model, which combines vision and language understanding in a single unified framework.
+# Overview
+This project allows users to upload an image, receive an automatic caption, and ask natural language questions about the image. The system uses the BLIP VQA model, which combines a Vision Transformer and text transformer to jointly process visual and textual information.
 
 
-# System Architecture
-
-The system follows a four-layer architecture:
-
-1. User Interface Layer – Image upload and question input  
-2. Preprocessing Layer – Image resizing and normalization  
-3. BLIP Model Layer – Vision Transformer + Text Transformer + Decoder  
-4. Output Layer – Caption and answer generation  
+# Workflow
+1. User uploads an image
+2. Model generates an initial caption
+3. User asks questions about the image
+4. Model answers using image + text context
+5. Conversation continues for the same image
 
 
-# Technologies Used
-
-- Programming Language: Python  
-- Deep Learning Framework: PyTorch  
-- Model: BLIP (Vision–Language Transformer)  
-- Libraries: Hugging Face Transformers, PIL, OpenCV  
-- Hardware: CPU-based inference  
-
-
-# Dataset & Evaluation
-
-- Datasets used: COCO
-- Evaluation metrics:
-  - BLEU, METEOR, CIDEr for image captioning
-  - VQA Accuracy for question answering
-- Achieved ~82–84% accuracy on VQA tasks
+# Tech Stack
+- Python
+- PyTorch
+- Hugging Face Transformers
+- BLIP (Vision–Language Model)
+- PIL (Image Processing)
 
